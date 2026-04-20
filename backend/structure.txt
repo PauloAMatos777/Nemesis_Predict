@@ -1,0 +1,35 @@
+📁 projeto-anomalias/
+├── 📁 backend/
+│   ├── main.py                        # Arquivo principal FastAPI
+│   ├── ml_service.py                 # Pipeline LSTM + ingestão automática
+│   ├── crud.py                       # Funções de persistência no banco
+│   ├── database.py                   # Conexão e sessão com o PostgreSQL
+│   ├── models.py                     # Modelos Pydantic e SQLAlchemy
+│   ├── schemas.py (opcional)        # Schemas de entrada/saída (se quiser separar)
+│   ├── requirements.txt              # Dependências Python
+│   ├── 📁 model/
+│   │   ├── lstm_model.h5             # Modelo LSTM treinado
+│   │   └── scaler.gz                 # Scaler MinMax salvo
+│   └── 📁 data/
+│       └── arquivos.csv              # Arquivos CSV contínuos (ex: sensor1.csv, sensor2.csv)
+│
+├── 📁 frontend/
+│   ├── 📁 public/
+│   │   └── index.html
+│   ├── 📁 src/
+│   │   ├── App.tsx                   # App React principal
+│   │   ├── main.tsx                  # Bootstrap do React
+│   │   ├── api.ts                    # Requisições para o backend
+│   │   └── 📁 components/
+│   │       ├── Dashboard.tsx         # Dashboard com gráficos
+│   │       ├── HistoricoAnomalias.tsx
+│   │       ├── HistoricoOrdens.tsx
+│   │       ├── EventosPorDiaChart.tsx
+│   │       ├── DeteccaoAnomaliasChart.tsx
+│   │       └── RankingVariaveis.tsx
+│   ├── package.json
+│   └── vite.config.ts                # Configuração do Vite
+│
+├── docker-compose.yml (opcional)    # Com PostgreSQL + Backend + Frontend
+├── README.md                        # Documentação do projeto
+└── .env                             # Variáveis de ambiente (DB_HOST, etc)
