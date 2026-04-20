@@ -6,8 +6,6 @@ Análise Preditiva: Processamento de dados históricos para previsão de tendên
 
 Deep Learning: Utiliza redes neurais avançadas via TensorFlow/Keras.
 
-Interface Amigável: Frontend dedicado para visualização dos resultados.
-
 Backend Robusto: API estruturada para processamento de dados em tempo real.
 
 📂 Estrutura do Projeto
@@ -21,10 +19,6 @@ Nemesis-Predict/
 Linguagem: Python 3.x
 
 IA/ML: TensorFlow, Pandas, NumPy, Scikit-learn
-
-Frontend: [Inserir aqui, ex: React.js / HTML & CSS]
-
-Backend: [Inserir aqui, ex: Flask / FastAPI]
 
 🚀 Como Executar o Projeto
 Pré-requisitos
